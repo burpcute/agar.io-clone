@@ -6,6 +6,6 @@ applications:
   buildpack: nodejs_buildpack
   host: agar-clone
   domain: mybluemix.net
-  timeout: 180
+  timeout: 999999999
   env:
     NPM_CONFIG_PRODUCTION: false
